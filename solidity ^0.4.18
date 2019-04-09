@@ -1,0 +1,10 @@
+pragma solidity ^0.4.18;
+
+contract Custodian {
+    event CreateClient(uint256 _clientId, address _clientAddress);
+
+    mapping (uint256 => address) clients;
+    
+    function createClient() public returns (uint256);
+    function generateID(address _clientAddress) returns (uint256);
+}
